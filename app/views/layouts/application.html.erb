@@ -33,14 +33,25 @@
       </div> <!-- navbar container -->
 		</nav> <!-- navbar navbar-default navbar-fixed-top -->
  
-    <div class="carousel">
-      <%= image_tag("carousel-lifestyle.jpg", :alt => "Lifestyle", :class => "img") %>
-      <%= image_tag("carousel-mission.jpg", :alt => "Mission", :class => "img") %>
-      <%= image_tag("carousel-vaccinations.jpg", :alt => "Vaccinations", :class => "img")%> 
-      <%= image_tag("carousel-fish.jpg", :alt => "Fish", :class => "img")%> 
-      <%= image_tag("carousel-exoticanimals.jpg", :alt => "Exotic Animals", :class => "img")%>  
-    </div>
-  </header>
+    <div class="carousel slide" data-ride="carousel" id="carousel-example-generic">
+      <div class="carousel-inner">
+        <div class="item active"><%= image_tag("carousel-lifestyle.jpg", :alt => "Lifestyle", :class => "img") %></div>
+        <div class="item"><%= image_tag("carousel-mission.jpg", :alt => "Mission", :class => "img") %></div>
+        <div class="item"><%= image_tag("carousel-vaccinations.jpg", :alt => "Vaccinations", :class => "img")%></div> 
+        <div class="item"><%= image_tag("carousel-fish.jpg", :alt => "Fish", :class => "img")%></div> 
+        <div class="item"><%= image_tag("carousel-exoticanimals.jpg", :alt => "Exotic Animals", :class => "img")%></div>
+      </div> <!-- carousel-inner -->
+      
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"></a>
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      <a class="right carousel-control" href="#featured" role="button" data-slide="next"></a>
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </div> <!-- carousel slide -->
+  
+
+
+
+  </header> <!-- header -->
 
 
 <div class="main">
