@@ -7,6 +7,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 	<header>
 		<nav>
@@ -26,50 +27,62 @@
   <%= image_tag("carousel-fish.jpg", :alt => "Fish", :class => "img")%> 
   <%= image_tag("carousel-exoticanimals.jpg", :alt => "Exotic Animals", :class => "img")%>  
 </div>
-	
   </header>
 <div class="main">
   <div class="page" id="mission">
-    <h2>Our Mission</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo beatae facilis, dolore nemo ut consequuntur! Dignissimos dolor voluptas eius, facilis nostrum illo veniam quam exercitationem cumque. Repellendus deleniti vero praesentium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repellendus consequatur temporibus hic minima, explicabo quam expedita! Voluptatem quae amet eveniet quia, sunt, sint incidunt explicabo voluptates, cupiditate temporibus perferendis?</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, asperiores, numquam. Natus quaerat tempora officia veniam quo. Temporibus est enim eos quas, error, aperiam ad cum incidunt, voluptatibus voluptate similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequuntur esse quae suscipit alias, fuga temporibus at veritatis nihil, maiores? Quasi odio rerum id qui assumenda, exercitationem accusantium omnis unde!</p>
-  </div> 
+    <div class="content container">
+      <h2>Our Mission</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo beatae facilis, dolore nemo ut consequuntur! Dignissimos dolor voluptas eius, facilis nostrum illo veniam quam exercitationem cumque. Repellendus deleniti vero praesentium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repellendus consequatur temporibus hic minima, explicabo quam expedita! Voluptatem quae amet eveniet quia, sunt, sint incidunt explicabo voluptates, cupiditate temporibus perferendis?</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, asperiores, numquam. Natus quaerat tempora officia veniam quo. Temporibus est enim eos quas, error, aperiam ad cum incidunt, voluptatibus voluptate similique. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt consequuntur esse quae suscipit alias, fuga temporibus at veritatis nihil, maiores? Quasi odio rerum id qui assumenda, exercitationem accusantium omnis unde!</p>
+    </div>
+  </div>    <!-- MISSION PAGE -->
 
-  <!-- MISSION PAGE -->
+ 
 
   <div class="page" id="services">
-    <h2>Services</h2>
-    <article>
-      <%=image_tag("icon-exoticpets.svg", :alt => "Icon", :class => "svg")%>
-      <h3>Exotic Pets</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum, cumque, esse quis ipsa soluta, ipsum ullam tempore obcaecati magni ad itaque quaerat corrupti! Voluptates unde dolor laudantium, sequi eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nesciunt, repellendus quos, voluptates, ex itaque eos quia ipsam magni et, nostrum deleniti quisquam tenetur dolorum necessitatibus velit. Fugiat, cumque, suscipit.</p>
-    </article>
+    <div class="content container">
+      <h2>Services</h2>
+        <div class="row">
+          <article class="service col-sm-4">
+              <%=image_tag("icon-exoticpets.svg", :alt => "Icon", :class => "svg")%>
+              <h3>Exotic Pets</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic dolorum, cumque, esse quis ipsa soluta, ipsum ullam tempore obcaecati magni ad itaque quaerat corrupti! Voluptates unde dolor laudantium.</p>
+          </article>
 
-    <article>
-      <%=image_tag("icon-grooming.svg", :alt => "Icon", :class => "svg")%>
-      <h3>Grooming</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate fuga, dolor cupiditate mollitia, laborum cum illum cumque ullam. A quibusdam ut commodi exercitationem cupiditate repellat, excepturi quidem atque. Iusto, quaerat!</p>
-    </article>
+          <article class="service col-sm-4">
+            <%=image_tag("icon-grooming.svg", :alt => "Icon", :class => "svg")%>
+            <h3>Grooming</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate fuga, dolor cupiditate mollitia, laborum cum illum cumque ullam. A quibusdam ut commodi exercitationem cupiditate repellat, excepturi quidem atque. Iusto, quaerat!</p>
+          </article>
 
-    <article>
-      <%=image_tag("icon-health.svg", :alt => "Icon", :class => "svg")%>
-      <h3>General Health</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quo maiores vero earum officiis, corrupti sapiente aspernatur, vitae magnam nesciunt commodi sint similique error ea labore, neque accusamus, excepturi ducimus.</p>
-    </article>
+          <article class="service col-sm-4">
+            <%=image_tag("icon-health.svg", :alt => "Icon", :class => "svg")%>
+            <h3>General Health</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus quo maiores vero earum officiis, corrupti sapiente aspernatur, vitae magnam nesciunt commodi sint similique error ea labore, neque accusamus, excepturi ducimus.</p>
+          </article>
 
-    <article>
-      <%=image_tag("icon-pestcontrol.svg", :alt => "Icon", :class => "svg")%>
-      <h3>Pest Control</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo commodi facilis reprehenderit! Iure ad dolores sint, ipsum neque hic rem laboriosam accusantium voluptatum obcaecati eum, ratione nulla, nihil ipsa. Quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat repellendus hic illo ipsum facere aliquid exercitationem ab consectetur, perspiciatis, aperiam tempora animi, aliquam illum tenetur architecto ea reiciendis velit officia?</p>
-    </article>
+          <article class="service col-sm-4">
+            <%=image_tag("icon-nutrition.svg", :alt => "Icon", :class => "svg")%>
+            <h3>Nutrition</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo commodi facilis reprehenderit! Iure ad dolores sint, ipsum neque hic rem laboriosam accusantium voluptatum obcaecati eum, ratione nulla.</p>
+          </article>
 
-    <article>
-      <%=image_tag("icon-vaccinations.svg", :alt => "Icon", :class => "svg")%>
-      <h3>Vaccinations</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias laudantium vel fugit. Reprehenderit, omnis, earum. Consequatur saepe necessitatibus, amet explicabo aspernatur ea beatae, harum aliquam autem neque nulla adipisci.</p>
-    </article>  
+          <article class="service col-sm-4">
+            <%=image_tag("icon-pestcontrol.svg", :alt => "Icon", :class => "svg")%>
+            <h3>Pest Control</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias laudantium vel fugit. Reprehenderit, omnis, earum. Consequatur saepe necessitatibus, amet explicabo aspernatur ea beatae, harum aliquam autem neque nulla adipisci.</p>
+          </article> 
 
-  </div>  <!-- services page -->
+          <article class="service col-sm-4">
+            <%=image_tag("icon-vaccinations.svg", :alt => "Icon", :class => "svg")%>
+            <h3>Vaccinations</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab molestias laudantium vel fugit. Reprehenderit, omnis, earum. Consequatur saepe necessitatibus, amet explicabo aspernatur ea beatae, harum aliquam autem neque nulla adipisci.</p>
+          </article> 
+
+      </div> <!-- row -->
+    </div><!-- service container -->
+  </div>  <!-- services end -->
+
 
   <div class="page" id="staff">
     <h2 id="ourstaff"> Our Staff</h2>
